@@ -14,5 +14,10 @@ public class Solution {
         chicken.sing();
         chicken.fly();
         chicken.walk();
+
+        Bird rooster = new Chicken("rooster");
+        rooster.sing();
+        rooster.fly();
+        rooster.walk();
     }
 }
