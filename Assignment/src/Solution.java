@@ -56,7 +56,7 @@ public class Solution {
         shark2.eat(shark1);
         shark2.eat(clawnfish);
 
-        System.out.println("***** C *****");
+        System.out.println("***** D *****");
 
         Caterpillar calterpiller = new Caterpillar();
         calterpiller.walk();
@@ -64,6 +64,9 @@ public class Solution {
         Butterfly butterfly = solution.metamorphosis(calterpiller);
         butterfly.walk();
         butterfly.fly();
+
+        System.out.println("***** E *****");
+        solution.count();
 
     }
 
@@ -73,5 +76,38 @@ public class Solution {
             return new Butterfly();
         }
         return null;
+    }
+
+    public void count(){
+        Animal[] animals = new Animal[]{
+                new Bird(),
+                new Duck(),
+                new Chicken(),
+                new Parrot(),
+                new Fish(),
+                new Shark(),
+                new Clawnfish(),
+                new Dolphin(),
+                new Dog(),
+                new Butterfly(),
+                new Cat()
+        };
+
+        int countFly = 0;
+        int countWalk = 0;
+        int countSwim = 0;
+        int countSing = 0;
+
+        for(Animal a : animals){
+            if(a.walk()) countWalk++;
+            if(a.fly()) countFly++;
+            if(a.swim()) countSwim++;
+            if(a.sing()) countSing++;
+        }
+
+        System.out.println("Number of Animals Walking : " + countWalk);
+        System.out.println("Number of Animals Swimming : " + countSwim);
+        System.out.println("Number of Animals Singing : " + countSing );
+        System.out.println("Number of Animals Flying : " + countFly);
     }
 }
