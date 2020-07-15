@@ -1,3 +1,6 @@
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement (name="person")
 public class Animal {
     String sound = "";
     boolean walk(){
