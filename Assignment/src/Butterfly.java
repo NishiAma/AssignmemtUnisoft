@@ -7,12 +7,23 @@ public class Butterfly extends Animal{
         currentType = Type.BUTTERFLY;
     }
 
-    void fly(){
-        System.out.println("I am flying");
+
+
+    @Override
+    final boolean walk() {
+        System.out.println("I can't walk");
+        return false;
     }
 
     @Override
-    final void walk() {
-        System.out.println("I can't walk");
+    final boolean swim() {
+        System.out.println("I can't swim");
+        return false;
+    }
+
+    @Override
+    final boolean sing() {
+        System.out.println("I can't sing");
+        return false;
     }
 }

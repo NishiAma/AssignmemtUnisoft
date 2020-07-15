@@ -1,8 +1,6 @@
 import org.junit.platform.commons.util.StringUtils;
 
 public class Chicken extends Bird{
-    public String sound = "Cluck Cluck";
-
 
     Chicken(){
         sound = "Cluck Cluck";
@@ -14,4 +12,9 @@ public class Chicken extends Bird{
         setWingsClipped(true);
     }
 
+    @Override
+    final boolean swim() {
+        System.out.println("I can't swim");
+        return false;
+    }
 }
