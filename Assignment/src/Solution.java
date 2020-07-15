@@ -34,5 +34,10 @@ public class Solution {
         parrot3.walk();
         parrot3.fly();
         parrot3.sing();
+
+        System.out.println("******* B *********");
+
+        Animal fish = new Fish();
+        fish.walk();
     }
 }
