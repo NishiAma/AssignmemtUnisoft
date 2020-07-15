@@ -10,7 +10,7 @@ class Bird extends Animal {
     }
 
     public void sing() {
-        System.out.println("I am singing");
+        System.out.println("I am singing " + sound);
     }
 
     void setWingsClipped(Boolean isWingsClipped){
