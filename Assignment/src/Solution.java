@@ -68,6 +68,10 @@ public class Solution {
         System.out.println("***** E *****");
         solution.count();
 
+        System.out.println("*** BONUS ***");
+        Chicken sinhalaRooster = new Chicken("Rooster", "Sinhalese");
+        sinhalaRooster.sing();
+
     }
 
     Butterfly metamorphosis(Caterpillar caterpillar){
