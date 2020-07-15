@@ -39,5 +39,21 @@ public class Solution {
 
         Animal fish = new Fish();
         fish.walk();
+
+        Fish shark1 = new Shark();
+        shark1.swim();
+        shark1.walk();
+
+
+        Clawnfish clawnfish = new Clawnfish();
+        clawnfish.walk();
+        clawnfish.swim();
+        clawnfish.makeJokes();
+
+        Shark shark2 = new Shark();
+        shark2.swim();
+        shark2.eat(shark1);
+        shark2.eat(clawnfish);
+
     }
 }
