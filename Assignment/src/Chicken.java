@@ -1,7 +1,7 @@
 import org.junit.platform.commons.util.StringUtils;
 
 public class Chicken extends Bird{
-    String sound = "Cluck Cluck";
+    public String sound = "Cluck Cluck";
     @Override
     public void sing() {
         System.out.println("I Sing " + sound);
@@ -14,4 +14,5 @@ public class Chicken extends Bird{
         if("Rooster".equalsIgnoreCase(rooster)) sound = "Cock-a-doodle-doo";
         setWingsClipped(true);
     }
+
 }
