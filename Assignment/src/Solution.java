@@ -1,5 +1,6 @@
 public class Solution {
     public static void main(String[] args) {
+        Solution solution = new Solution();
         Bird bird = new Bird();
         bird.walk();
         bird.fly();
@@ -55,5 +56,22 @@ public class Solution {
         shark2.eat(shark1);
         shark2.eat(clawnfish);
 
+        System.out.println("***** C *****");
+
+        Caterpillar calterpiller = new Caterpillar();
+        calterpiller.walk();
+
+        Butterfly butterfly = solution.metamorphosis(calterpiller);
+        butterfly.walk();
+        butterfly.fly();
+
+    }
+
+    Butterfly metamorphosis(Caterpillar caterpillar){
+        if (Type.CATERPILLAR.equals(caterpillar.currentType)){
+            caterpillar = null;
+            return new Butterfly();
+        }
+        return null;
     }
 }
